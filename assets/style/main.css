@@ -13,7 +13,7 @@ html{
     scroll-behavior: smooth;
 }
 
-:root{
+/* :root{
     --light-black:#2d3038;
     --white:#fff;
     --yellow:#f4bf00;
@@ -24,4 +24,27 @@ html{
     --purple:#b90162;
     --purple2:#873e95;
     --blue:#3c70b4;
+} */
+
+:root{
+    --blue:#007ced;
+    --light-dark:#222222;
+}
+
+
+
+.base .background{
+    background-color: var(--blue);
+    height: 100vh;
+    width: 100vw;
+    /* position: relative;   */
+}
+
+.base .put{
+    background-color: var(--light-dark);
+    /* position: absolute; */
+    height: 100vh;
+    width: 100vw;
+    margin: 2rem;
+    margin-right: 2rem;
 }
