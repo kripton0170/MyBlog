@@ -99,11 +99,11 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'uz'
 
-TIME_ZONE = 'Tashkent/Asia'
+TIME_ZONE = 'Asia/Tashkent'
 
 USE_I18N = True
 
-USE_TZ = False
+USE_TZ = True
 
 
 # Static files (CSS, JavaScript, Images)
@@ -111,14 +111,13 @@ USE_TZ = False
 
 STATIC_URL = 'static/'
 
-STATICFILES_DIRS = BASE_DIRS / 'assets',
+STATIC_ROOT = BASE_DIR / 'static'
 
-STATIC_ROOT = BASE_DIRS / 'static'
+STATCFILES_DIRS = BASE_DIR / 'assets',
 
 MEDIA_URL = 'media/'
 
-MEDIA_ROOT = BASE_DIRS / 'media'
-
+MEDIA_ROOT = BASE_DIR / 'media'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
