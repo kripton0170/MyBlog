@@ -1,29 +1,53 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charser="UTF-8">
     <title>MyBlog</title>
+    <!-- custom css file link -->
     <link rel="stylesheet" href="{% static 'style/main.css' %}">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
 </head>
+
 <body>
-    {% comment %} Navbar {% endcomment %}
-    <section class="base">
-        <div class="background"><div>
-        <div class="put"></div>
-        
-    </section>
+    <!-- navbar  -->
+    <header>
+        <section>
+            <div class="user">
+                <img src="{% static 'img/photo_2022.jpg'%}" alt="images">
+                <h3 class="my_name">Nasirov Kamoliddin</h3>
+                <p class="post">Full stack Web developer</p>
+            </div>
+        </section>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">home</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">education</a></li>
+                <li><a href="#">portfolio</a></li>
+                <li><a href="#">contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- container -->
+
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    {% block content %}    
+
+
+
+
+
+
+
+
+
+
+    {% block content %}
     {% endblock %}
 </body>
 </head>

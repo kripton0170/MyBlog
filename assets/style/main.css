@@ -1,16 +1,29 @@
 *{
     box-sizing: border-box;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 2rem;
     margin: 0;
     padding: 0;
     text-decoration: none;
     list-style-type: none;
+    text-transform: capitalize;
+    font-weight: normal;
 }
 
 html{
     font-size: 62.5%;
     scroll-behavior: smooth;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    /* background: url(https://i.gifer.com/JqFp.gif); */
+    /* background: url(data:image/jpeg;base64,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); */
+    padding: 5.5rem;
+    background: linear-gradient(deeppink, purple );
 }
 
 /* :root{
@@ -32,19 +45,152 @@ html{
 }
 
 
-
-.base .background{
-    background-color: var(--blue);
-    height: 100vh;
-    width: 100vw;
-    /* position: relative;   */
+header{
+    width: 35rem;
+    /* height: 58rem; */
+    background: rgba(255, 255, 255, .2);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .3);
+    backdrop-filter: blur(.4rem);
+    text-align: center;
+    padding: 1rem;
+    border-radius: 1rem;
 }
 
-.base .put{
-    background-color: var(--light-dark);
-    /* position: absolute; */
-    height: 100vh;
-    width: 100vw;
-    margin: 2rem;
-    margin-right: 2rem;
+header .user{
+    padding-top: 2rem;
+}
+
+header .user img{
+    margin: 1rem 0;
+    height: 15rem;
+    width: 15rem;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 0 0 1rem rgba(255, 255, 255, .2);
+}
+
+header .user .my_name{
+    font-size: 3rem;
+    color: #fff;
+    padding: .5rem 0;
+}
+
+header .user .post{
+    font-size: 1.8rem;
+    color: #eee;
+    font-weight: lighter;
+}
+
+header .navbar{
+    padding: 1rem 3rem;
+}
+
+header .navbar ul li{
+    margin: 1rem 0;
+    list-style: none;
+}
+
+header .navbar ul li a{
+    display: block;
+    padding: 1rem;
+    font-size: 2rem;
+    color: #fff;
+    background: rgba(255, 255, 255, .2);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .3);
+}
+
+header .navbar ul li a:hover{
+    background: rgba(255, 255, 255, .5);
+    color: #555;
+    /* color: #eee; */
+    transition: none;
+    transition: all .2s linear;
+}
+
+/* container */
+
+.container{
+    height: 59.5rem;
+    width: 80rem;
+    background: rgba(255, 255, 255, .2);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .3);
+    backdrop-filter: blur(.4rem);
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.container .home{
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding-bottom: 10rem;
+    flex-flow: column;
+}
+
+.home h3{
+    font-size: 2.5rem;
+    font-weight: lighter;
+    color: #eee;
+}
+
+.home .name span{
+    font-size: 4rem;
+    color: #fff;
+}
+
+.home .post{
+    padding: 1rem 0;
+}
+
+.home .post span{
+    font-size: 3rem;
+    color: #fff;
+}
+
+.btn{
+    font-size: 2rem;
+    padding: .7rem 4rem;
+    background: rgba(255, 255, 255, .2);
+    color: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .2);
+    margin-top: 1rem;
+    cursor: pointer;
+    transition:  .2s linear;
+}
+
+.btn:hover{
+    background: rgba(255, 255, 255, .5);
+    color: #555;
+}
+
+.home .share{
+    position: absolute;
+    left: 50%;
+    bottom: 5rem;
+    transform: translateX(-50%);
+    display: flex;
+    padding: 1rem;
+    border-radius: 1rem;
+    background: rgba(255, 255, 255, .1);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .2);
+    transition: .2s linear;
+}
+
+
+.home .share a{
+    background: rgba(255, 255, 255, .2  );
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .2);
+    padding: 1rem 2rem;
+    margin: 1rem;
+    color: #fff;
+    font-size: 2rem;
+    border-radius: 1rem;
+}
+
+.home .share a:hover{
+    background: rgba(255, 255, 255, .5);
+    color: #555;
 }
