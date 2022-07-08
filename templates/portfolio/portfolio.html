@@ -2,21 +2,25 @@
 {% load static %}
 
 {% block content %}
-    <section class="portfolio">
-        <h1 class="heading">
-            my portfolio
-        </h1>
-        <div class="box-container">
+<section class="portfolio">
+    <h1 class="heading">
+        my portfolio
+    </h1>
+    <div class="box-container">
 
-            <div class="box">
-                <a href="#"><img src="{% static 'img/uzaro.jpg %}" alt="uzaro"></a>
-                <p>UZARO аъзоси бўлинг ва ўзаро суғурта афзалликларидан баҳраманд бўлинг, ўзаро ёрдамга шошилинг ва қийин кунларингизда бундан ўзингиз ҳам фойдаланинг. Биргаликда жамиятда содда ва қулай ўзаро ёрдам тизими ҳамда раҳмдиллик хислатини шакллантирамиз.</p>
-            </div>
-
-            <div class="box">
-                
-                <p>Sifatli mahsulotlarni uyingizga yetkazib beramiz ! </p>
+        <div class="box">
+            <div><a href="#"><img src="{% static 'img/uzaro.jpg' %}" alt="uzaro"></a></div>
+            <div>
+                <p>UZARO аъзоси бўлинг ва ўзаро суғурта афзалликларидан баҳраманд бўлинг, ўзаро ёрдамга шошилинг ва
+                    қийин кунларингизда бундан ўзингиз ҳам фойдаланинг. Биргаликда жамиятда содда ва қулай ўзаро ёрдам
+                    тизими ҳамда раҳмдиллик хислатини шакллантирамиз.</p>
             </div>
         </div>
-    </section>
+
+        <div class="box">
+            <a href="#"><img src="{% static 'img/madina market.jpg' %}" alt="madina market"></a>
+            <p>Sifatli mahsulotlarni uyingizga yetkazib beramiz ! </p>
+        </div>
+    </div>
+</section>
 {% endblock %}

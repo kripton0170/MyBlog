@@ -1,0 +1,20 @@
+.portfolio {
+    min-height: 100%;
+}
+
+
+.portfolio .box-container{
+    display: flex;
+    justify-content:space-between;
+    box-shadow: 0 1rem 2rem rgba(255, 255, 255, .3);
+}
+
+.portfolio .box-container .box img{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 1rem;
+}
+
+.portfolio .box-container .box p{
+
+}
